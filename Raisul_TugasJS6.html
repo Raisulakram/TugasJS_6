@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+</head>
+<script type="text/javascript">
+    $("document").ready(function () {
+        $("#div1").click(function () {
+          $("#profile").show();
+          $("#moto_hidup, #keahlian").hide();
+        });
+
+        $("#div2").click(function () {
+          $("#moto_hidup").show();
+          $("#profile, #keahlian").hide();
+        });
+
+        $("#div3").click(function () {
+          $("#keahlian").show();
+          $("#profile, #moto_hidup").hide();
+        });
+      });
+
+</script>
+<body>
+    <h2>Menampilkan Data Saya Sebagai Berikut :</h2>
+    <ul>
+      <div id="div1">Profile</div>
+      <div id="div2">Moto hidup</div>
+      <div id="div3">Keahlian</div>
+    </ul>
+    
+    <div class="content">
+        <div id="profile" class="data">
+            <h2>Profile Saya</h2>
+            <p>Nama   : Raisul Akram</p>
+            <p>Asal   : Pidie, Aceh</p>
+            <p>Umur   : 20</p>
+            <p>Perguruan Tinggi : Universitas Jabal Ghafur Pidie</p>
+        </div>
+        
+        <div id="moto_hidup" class="data">
+            <h2>Moto Hidup</h2>
+            <p>Mengalahkan Ketakutan, Jangan biarkan ketakutan menghambat Saya dalam mencapai potensi penuh Saya.</p>
+        </div>
+        
+        <div id="keahlian" class="data">
+            <h2>Keahlian</h2>
+            <p>1.HTML</p>
+            <p>2.CSS,Boostrap</p>
+            <p>3.Javascript</p>
+            <p>4.Microsoft Office</p>
+        </div>
+    </div>
+
+</body>
+</html>
